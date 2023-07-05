@@ -27,28 +27,28 @@ fields:
     target: dt_apuracao
     type: date
     format: '%d/%m/%Y'
-  - name: Previsão para 2023
+  - name: Previsão para 2024
     target: previsao_para_ano0
     type: string
-  - name: Em apuração? (2023)
+  - name: Em apuração? (2024)
     target: em_apuracao_ano0
     type: string
-  - name: Previsão para 2024
+  - name: Previsão para 2025
     target: previsao_para_ano1
     type: string
-  - name: Em apuração? (2024)
+  - name: Em apuração? (2025)
     target: em_apuracao_ano1
     type: string
-  - name: Previsão para 2025
+  - name: Previsão para 2026
     target: previsao_para_ano2
     type: string
-  - name: Em apuração? (2025)
+  - name: Em apuração? (2026)
     target: em_apuracao_ano2
     type: string
-  - name: Previsão para 2026
+  - name: Previsão para 2027
     target: previsao_para_ano3
     type: string
-  - name: Em apuração? (2026)
+  - name: Em apuração? (2027)
     target: em_apuracao_ano3
     type: string
   - name: Fonte
