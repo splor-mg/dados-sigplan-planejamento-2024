@@ -4,12 +4,6 @@ WORKDIR /project
 
 RUN /rocker_scripts/install_python.sh
 
-RUN export DEBIAN_FRONTEND=noninteractive
-RUN apt-get update
-RUN apt-get install -y software-properties-common
-RUN add-apt-repository ppa:rmescandon/yq
-RUN apt-get install yq -y
-
 COPY requirements.txt .
 COPY DESCRIPTION .
 
