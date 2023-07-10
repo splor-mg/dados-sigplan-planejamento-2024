@@ -3,7 +3,7 @@
 EXT = txt
 INPUT_DIR = data-raw
 OUTPUT_DIR = data
-RESOURCE_NAMES := $(shell yq e '.resources[].name' datapackage.yaml)
+RESOURCE_NAMES := $(shell python main.py resources)
 OUTPUT_FILES := $(addsuffix .csv,$(addprefix $(OUTPUT_DIR)/,$(RESOURCE_NAMES)))
 
 all: extract transform build validate
