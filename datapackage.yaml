@@ -28,7 +28,7 @@ resources:
     format: csv
     encoding: windows-1252
     dialect: dialect.yaml
-    hash: sha256:56bbd48b5aa4b3e1508f094b67b8aec9450aab76685bf9d79a37d1c258accda4
+    hash: sha256:c3a10400a66fc9323c0a94c9963db2265ca32b0e9fbaac8839e63bdb47264892
     schema: schemas/localizadores_todos_planejamento.yaml
   - name: programas_planejamento
     title: Relatórios e Bases do Planejamento - Programas
