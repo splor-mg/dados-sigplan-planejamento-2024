@@ -18,7 +18,7 @@ fields:
     target: acao_cod
     type: integer
   - name: Título da Ação
-    target: titulo_da_acao
+    target: acao_desc
     type: string
   - name: Código do Identificador de Ação Governamental (IAG)
     target: iag_cod

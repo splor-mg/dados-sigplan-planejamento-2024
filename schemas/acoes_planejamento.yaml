@@ -51,9 +51,91 @@ fields:
   - name: Código do Tipo de Ação
     target: identificador_tipo_acao_cod
     type: integer
+    contraints:
+      enum:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+    description: >
+      As ações classificam-se nos seguintes tipos:
+
+      a) Projeto: é instrumento de programação orientado para alcançar o objetivo de um programa. 
+      Envolve um conjunto de operações, 
+      limitadas no tempo, 
+      das quais resulta um produto que concorre para a expansão ou aperfeiçoamento das ações de governo. 
+      Os tipos de projetos existentes no Estado são:
+      
+      - Projeto do Orçamento Fiscal (Código 1)
+      - Projeto do Orçamento de Investimento (Código 3)
+
+      b) Atividade: é o instrumento de programação orientado para alcançar o objetivo de um programa, 
+      envolvendo um conjunto de operações que se realizam de modo contínuo e permanente, 
+      das quais resulta um produto necessário à manutenção das ações de Governo. 
+      Os tipos de atividades existentes no Estado são:
+
+      - Atividade meio do Orçamento Fiscal (Código 2)
+      - Atividade fim do Orçamento Fiscal (Código 4)
+      - Atividade meio de Empresa (Código 6)
+      - Atividade fim de Empresa (Código 8)
+
+      c) Operação Especial (Código 7): é o instrumento de programação que envolve um conjunto de operações das quais resulta uma transferência financeira, 
+      não gerando contraprestação direta sob a forma de bens e serviços. 
+      Dessa forma, 
+      abarcam despesas que não contribuem para a manutenção,
+      expansão ou aperfeiçoamento das ações do governo estadual.
+
+      Em regra, 
+      as operações especiais integram o programa padronizado Obrigações Especiais.
+      Contudo, 
+      poderão compor algum programa finalístico ou de apoio a políticas públicas, 
+      quando efetivamente contribuam para a consecução de seus objetivos. 
+      Nessas hipóteses, 
+      o produto poderá ser expresso pela quantidade de pessoas ou entidades (municípios, empresas, organizações civis) que se beneficiam diretamente com a transferência financeira (ex.: município atendido),
+      ou pelo número de transferências realizadas (ex.: auxílio previdenciário concedido, financiamento concedido).
+      
+      Por fim, cita-se os principais exemplos de despesa que serão financiadas por ações dessa natureza: 
+      
+      - as despesas relativas a transferências constitucionais obrigatórias a municípios, 
+      - o pagamento de proventos de inativos, precatórios e requisições de pequeno valor, 
+      - o adimplemento de obrigações relativas ao pagamento da dívida pública fundada interna e externa.
+
+      d) Não-Orçamentária (Código 5): é instrumento de programação orientado para alcançar o objetivo de um programa, 
+      envolvendo um conjunto de operações de natureza não orçamentária, 
+      das quais resulta um produto necessário à solução ou mitigação da situação-problema. 
+      Cabe considerar que, 
+      embora não demandem a alocação específica e direta de recursos orçamentários para sua execução, 
+      as ações não orçamentárias articulam recursos gerenciais, 
+      tecnológicos, 
+      humanos, 
+      materiais, 
+      institucionais, 
+      etc.
+    notes:
+      - |
+        A coluna `identificador_tipo_acao_cod` pode ser utilizada para segregação das ações percententes aos: 
+        
+        - __Orçamento fiscal__ (1, 2, 4, 7, 9)
+        - __Orçamento de investimento das empresas controladas__ (3, 6, 8)
+        - __Ações não orçamentárias__ (5)
   - name: Tipo de Ação
     target: identificador_tipo_acao_desc
     type: string
+    enum:
+      - Projeto do Orçamento Fiscal
+      - Atividade Meio do Orçamento Fiscal
+      - Projeto do Orçamento de Investimento
+      - Atividade Fim do Orçamento Fiscal
+      - Não Orçamentário
+      - Atividade Meio de Empresa
+      - Operação Especial
+      - Atividade Fim de Empresa
+      - Reserva de Contingência
   - name: Código da Ação
     target: acao_cod
     type: integer
