@@ -269,8 +269,8 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8",
-      "hash": "sha256:489c6e9b6bbec00c0bdfa2407336e755c2bea4bd71e24b9d00bbcad987dc69fe",
-      "bytes": 124919,
+      "hash": "sha256:d2c32deb014bb9a511a7cd9b01562a83e776754a7b614dfe15d7ac9ba936132f",
+      "bytes": 130597,
       "fields": 26,
       "rows": 245,
       "schema": {
@@ -307,12 +307,12 @@
           },
           {
             "name": "indice_de_referencia",
-            "type": "string",
+            "type": "number",
             "source": "Índice de Referência"
           },
           {
-            "name": "em_apuracao_indice_de_referencia",
-            "type": "string",
+            "name": "is_em_apuracao_indice_de_referencia",
+            "type": "boolean",
             "source": "Em apuração? (Índice de Referência)"
           },
           {
@@ -322,42 +322,42 @@
           },
           {
             "name": "previsao_para_ano0",
-            "type": "string",
+            "type": "number",
             "source": "Previsão para 2024"
           },
           {
-            "name": "em_apuracao_ano0",
-            "type": "string",
+            "name": "is_em_apuracao_ano0",
+            "type": "boolean",
             "source": "Em apuração? (2024)"
           },
           {
             "name": "previsao_para_ano1",
-            "type": "string",
+            "type": "number",
             "source": "Previsão para 2025"
           },
           {
-            "name": "em_apuracao_ano1",
-            "type": "string",
+            "name": "is_em_apuracao_ano1",
+            "type": "boolean",
             "source": "Em apuração? (2025)"
           },
           {
             "name": "previsao_para_ano2",
-            "type": "string",
+            "type": "number",
             "source": "Previsão para 2026"
           },
           {
-            "name": "em_apuracao_ano2",
-            "type": "string",
+            "name": "is_em_apuracao_ano2",
+            "type": "boolean",
             "source": "Em apuração? (2026)"
           },
           {
             "name": "previsao_para_ano3",
-            "type": "string",
+            "type": "number",
             "source": "Previsão para 2027"
           },
           {
-            "name": "em_apuracao_ano3",
-            "type": "string",
+            "name": "is_em_apuracao_ano3",
+            "type": "boolean",
             "source": "Em apuração? (2027)"
           },
           {
@@ -755,5 +755,5 @@
       }
     }
   ],
-  "updated_at": "2023-12-22T11:17:33"
+  "updated_at": "2023-12-26T15:13:08"
 }
